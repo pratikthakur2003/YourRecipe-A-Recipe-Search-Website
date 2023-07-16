@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskChef</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="nav flex">
+            <h1 title="Discover, Customize, Health for Life"> YourRecipe </h1>
+            <ul class="flex">
+                <a href="#" id="home-tag"> Home </a>
+                <a href="#"> About </a>
+                <a href="#"> Contact </a>
+            </ul>
+            <div class="auth-section flex">
+                <button id="sign-up-button"> Sign Up</button>
+                <a href="#"> Log In </a>
+                
+            </div>
+        </div>
+        <div class="search-area">
+            <h1> Welcome to YourRecipe </h1>
+            <h4> Discover, Customize, Health for Life </h4>
+            <div class="search-main">
+                <input type="search" id="search-bar" placeholder="Search Here" />
+                <input type="submit" id="search-button" value="Search" />
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="loader-container invisible" id="loader-container">
+            <div class="loader"></div>
+        </div>
+        <div class="error-message-container invisible" id="error-message-container">
+            <h1 class="error-message" id="error-message"> ✕ Couldn't Find anything ✕ </h1>
+        </div>
+        <div class="item-container" id="item-container">
+
+        </div>
+        
+    </main>
+    <template class="template-item" id="template-item">
+        <div class="item" id="item">
+            <div class="item-image" id="item-image">
+                <img src="https://via.placeholder.com/300X250" id="template-item-image"  style="border-radius: 10px;"/>
+            </div>
+            <div class="template-item-info" id="template-item-info">
+                <div class="item-name-container">
+                    <h3 id="item-name" style="text-decoration: underline;"> Recipe Name </h3>
+                </div>
+                <p id="item-source"> Source Here </p>
+                <a href="" id="item-source-link"> See Here </a>
+            </div>
+        </div>
+        
+    </template>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
